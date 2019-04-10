@@ -1,0 +1,139 @@
+html{
+    font-size: 26.67vw!important;
+}
+body{
+    background: #fff;
+}
+/* 搜索 */
+.header{
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    height: .43rem;
+}
+.head_left{
+    float: left;
+}
+.head_left a img{
+    width: .18rem;
+    margin: .075rem .15rem;
+}
+.head_center{
+    float: left;
+    margin-top: .07rem;
+}
+.input_box{
+   
+    position: relative;
+}
+.input_box input{
+    width: 132%;
+    height: .3rem;
+    padding:0 .1rem 0 .1rem;
+    text-align: left; 
+    background-color: #f6f6f6;
+    display: block;
+    border: none;
+    border-radius: 1.1rem;
+}
+.input_box img{
+    width: 0.16rem;
+    position: absolute;
+    top: 0.07rem;
+    right: -.7rem;
+}
+.head_right{
+    float: right;
+}
+.head_right a img{
+    width: .3rem;
+    margin-right: .18rem;
+    margin-top: .14rem; 
+}
+
+/* 主体 */
+.container{
+    width: 100%;
+    -webkit-flex:1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.container_left{
+    width: 0.76rem;
+    display: flex;
+    height: 100%;
+    background: #f0f0f0;
+    float: left;
+}
+.con_left_list{
+    box-sizing: border-box;
+    flex: 1;
+    overflow-y: auto;
+    /* position: relative;
+    top: 0; */
+} 
+.con_left_list li{
+    font-size: .14rem;
+    line-height: 0.48rem;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+}
+.con_left_list li a{
+    color: #000;
+    padding-bottom: .13rem;
+    border-bottom: 1px solid #ccc;
+}
+.container_right{
+    padding: 0.08rem 0 0 0.08rem ;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 2.98rem;
+    height: 100%;
+    position: fixed;
+    top: .43rem;
+    right: 0;
+    box-sizing: border-box;
+}
+
+.right_con_list{
+    flex: 1;
+    overflow-y: auto;
+}
+.right_con_list h3{
+    font-size: .07rem;
+    padding-bottom: .1rem;
+    color: #999;
+}
+.listbox{
+    overflow: hidden;
+}
+.con_list li{
+    box-sizing: border-box;
+    float: left;
+    margin-right: .08rem;
+    margin-bottom: .08rem;
+    background: #F8F8F8;
+    text-align: center;
+}
+.con_list li a img{
+    width: 0.78rem;
+    height: 0.78rem;
+    margin: .05rem
+}
+.con_list li a{
+    color: #666;
+}
+.con_list li a p{
+    font-size: 0.11rem;
+    margin-bottom: .05rem;
+}
+.cur{
+    border-left: .03rem solid #F20C59;
+    background: #fff;
+}
+.con_left_list .cur a{
+    color: #F20C59;
+    border: none;
+}

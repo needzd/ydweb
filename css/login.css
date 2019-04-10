@@ -1,0 +1,168 @@
+html{
+    font-size: 50px!important;
+}
+body{
+    background: #fff;
+}
+/* 搜索 */
+.header{
+    height: .98rem;
+}
+.head_left{
+    float: left;
+}
+.head_left a img{
+    width: .35rem;
+    margin: .25rem .35rem;
+}
+
+/* 主体 */
+.container{
+    padding: 0 .85rem;
+    margin-top: .1rem;
+}
+.mxlogo img{
+    width: 2.75rem;
+    height: .9rem;
+    margin: 0 auto .35rem;
+}
+.login_style{
+    font-size: .32rem;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.login_style li{
+    padding: .2rem 0;
+    flex: 1;
+    text-align: center;
+    color: #999;
+}
+.login_style .login_style_active{
+    color: #F20C59;
+    border-bottom: 2px solid #F20C59;
+}
+.user{
+    padding: .18rem 0;
+    display: flex;
+    position: relative;
+    border-bottom: .02rem solid #ececec;
+}
+.user_icon{
+    background: url(../img/icon.png) no-repeat;
+}
+.user_icon, .pwd_icon{
+    width: .44rem;
+    height: .44rem;
+    display: block;
+    margin-right: .1rem;
+    background-size: cover; 
+}
+.user_code{
+    flex: 1;
+    font-size: .3rem;
+    color: #333;
+}
+.user_code input{
+    outline: none;
+    width: 100%;
+    letter-spacing: .01rem;
+    border: 0;
+}
+.user_code input::placeholder{
+    color: #ccc;
+    font-size: .28rem;
+    letter-spacing: .01rem;
+}
+.del_btn{
+    background: url(../img/err.png);
+    background-size:cover; 
+    width: .3rem;
+    height: .3rem;
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+.del{
+    right: .6rem;
+    top: 45%;
+}
+.pwd{
+    padding: .45rem 0 .2rem 0;
+    display: flex;
+    position: relative;
+    border-bottom: .02rem solid #ececec;
+}
+.eys_btn{
+    background: url(../img/eys.png);
+    background-size:cover; 
+    width: .33rem;
+    height: .33rem;
+    position: absolute;
+    top: 45%;
+    right: 0;
+}
+.pwd_icon{
+    background: url(../img/pass.png) no-repeat;
+}
+.pwd_icon{
+    background-size: contain;
+}
+.qk_login{
+    margin-top: .25rem;
+    display: flex;
+    justify-content: space-between;
+    color:#78BEE9;
+    font-size: .3rem;
+}
+.qk_login a{
+    color:#78BEE9;
+}
+.login_btn{
+    background: -webkit-linear-gradient(left,#FF94CB 0,#FF80AA 100%);
+    border-radius:.55rem;
+    height: .88rem;
+    font-size: .32rem;
+    width: 98%;
+    margin: .68rem auto 0;
+    text-align: center;
+    line-height: .88rem;
+    box-sizing: border-box;
+}
+.login_btn a{
+    color: #fff;  
+}
+.other{
+    text-align: center;
+    margin-top: 2.5rem;
+    border-top: .01rem solid #ddd;
+}
+.other span{
+    font-size: .3rem;
+    height: .28rem;
+    width: 2.7rem;
+    color: #999;
+    background: #fff;
+    top: -.2rem;
+    left: 1.3rem;
+    padding: 0 .2rem;
+    display: block;
+    position: relative;
+}
+.other_login{
+    width: 100%;
+    display: flex;  
+    margin: .5rem 0;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .26rem;
+    text-align: center;
+}
+.other_login a{
+    color: #666;
+}
+.other_login a img{
+    width: .87rem;
+    height: .87rem;
+    margin: 0 auto .1rem;
+}

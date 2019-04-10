@@ -1,0 +1,94 @@
+html{
+    font-size: 50px!important;
+}
+body{
+    background: #fff;
+}
+/* 搜索 */
+.header{
+    height: .98rem;
+    display: flex;
+}
+.head_left{
+    float: left;
+}
+.head_left a img{
+    width: .35rem;
+    margin: .25rem .35rem;
+}
+.head_right{
+    width: 100%;
+    text-align: center;
+    margin-left: -1rem;
+}
+.head_right h2{
+    font-size: .36rem;
+    font-weight: 100;
+    line-height: .98rem;
+}
+
+/* 主体 */
+
+.container{
+    padding: .4rem .6rem .2rem;
+    margin-top: .1rem;
+}
+.user{
+    padding: .18rem 0;
+    display: flex;
+    position: relative;
+    border-bottom: .02rem solid #ececec;
+}
+.user_icon{
+    width: .44rem;
+    height: .44rem;
+    display: block;
+    margin-right: .1rem;
+    background: url(../img/icon.png) no-repeat;
+    background-size: cover; 
+}
+.user_code{
+    flex: 1;
+    font-size: .3rem;
+    color: #333;
+}
+.user_code input{
+    outline: none;
+    width: 100%;
+    letter-spacing: .01rem;
+    border: 0;
+}
+.user_code input::placeholder{
+    color: #ccc;
+    font-size: .28rem;
+    letter-spacing: .01rem;
+}
+.reg_btn{
+    background: -webkit-linear-gradient(left,#FF94CB 0,#FF80AA 100%);
+    border-radius:.55rem;
+    height: .88rem;
+    font-size: .32rem;
+    width: 98%;
+    margin: .68rem auto 0;
+    text-align: center;
+    line-height: .88rem;
+    box-sizing: border-box;
+}
+.reg_btn a{
+    color: #fff;  
+}
+.readed{
+    margin-top: .3rem;
+    line-height: .4rem;
+}
+.readed p{
+    font-size: .26rem;
+    color: #999; 
+}
+.readed a{
+    color: #78bee9;
+    font-size: .24rem;
+} 
+
+
+

@@ -1,0 +1,237 @@
+html{
+    font-size: 26.67vw!important;
+}
+body{
+    background-color: #f2f2f2!important;
+}
+/* 顶部 */
+.header{
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    height: .43rem;
+    display: flex;
+    justify-content: space-between;
+}
+.head_left a img{
+    width: .18rem;
+    margin: .075rem .15rem;
+}
+.head_center{
+    margin-top: .1rem;
+}
+.head_center h3{
+    font-size: .18rem;
+    font-weight: 100;
+}
+.head_right a img{
+    width: .3rem;
+    margin-right: .18rem;
+    margin-top: .14rem; 
+}
+
+/* 用户 */
+.usershow{
+    background: url(../img/userBg.png) no-repeat;
+    background-size:cover;
+    padding: .4rem .6rem .35rem .2rem;
+    display: flex; 
+    position: relative;
+}
+.userinfo{
+    display: flex;
+    align-content: flex-start;
+}
+.userimg img{
+    width: .5rem;
+    height: .5rem;
+    border: 1px solid #fff;
+    border-radius: .6rem;
+}
+.infolist{
+    margin-left: .1rem;
+    font-size: .18rem;
+    color: #fff;
+}
+.infolist a{
+    color: #fff;
+    font-size: .11rem;
+    text-align: center;
+}
+.infolist a p{
+    background: url(../img/noRealName.png) no-repeat .05rem center #B8B8B8;
+    background-size: .12rem auto;
+    display: inline-block;
+    padding: .015rem 0.1rem .015rem .25rem; 
+    border-radius: .12rem;
+}
+.gift span img{
+    width: .35rem;
+    height: .28rem;
+    position: absolute;
+    top: .03rem;
+    right: .5rem;
+}
+.messageBtn span img{
+    width: .2rem;
+    height: .19rem;
+    position: absolute;
+    top: .12rem;
+    right: .16rem;
+}
+.memberLevel{
+    background: url(../img/memberBg.png) no-repeat;
+    background-size: 100%;
+    padding: 0.1rem .08rem .1rem .32rem;
+    position: absolute;
+    top: .5rem;
+    right: 0;
+    display: inline-block;
+    font-size: .13rem;
+    color:#fff;
+    line-height: .1rem;
+}
+.memberLevel span{
+    color: #FD0175;
+    font-weight: 700;
+    position: absolute;
+    left: .07rem;
+}
+
+.sub_info{
+    margin-bottom: .1rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-sizing: border-box; */
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+.sub_info li{
+    /* width: 20%; */
+    flex: 1;
+    padding:.15rem 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.sub_info_list{
+    display:block;
+    font-size: .13rem;
+    color: #666;
+    position: relative;
+}
+.sub_info_list img{
+    margin: 0 auto .12rem;
+    width: .25rem;
+    height: .25rem;
+}
+.last_list{
+    background: #fcfcfc;
+    border-left: .0002rem solid #f1f1f1;
+}
+.fq_ico{
+    display: block;
+    font-size: .1rem;
+    margin-top: .01rem;
+    color: #999;
+}
+.sun_info_box{
+    flex-shrink: 0;
+}
+.sub_info_two{
+    margin-bottom: 0;
+}
+.fq_sanjx{
+    display: block;
+    width: 0;
+    height: 0;
+    border: .06rem solid transparent;
+    border-left-color: #f1f1f1;
+    position: absolute;
+    top: .25rem;
+}
+.fq_sanjx::after{
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border: .04rem solid transparent;
+    border-left-color: #fff;
+    position: absolute;
+    top: -.04rem;
+    left: -.06rem;
+}
+
+/* 猜你喜欢1 */
+.mylike1{
+    box-sizing: border-box;
+}
+.mylike1_title{
+    margin: .12rem 0;
+    text-align: center;
+    height: .15rem;
+}
+.mylike1_title h4{
+    font-size: .13rem;
+    line-height: .13rem;
+    font-weight: 100;
+    width: 1rem;
+    margin: 0 auto;
+    color: #999;
+    background-color: #f2f2f2;
+    position: relative;
+    z-index: 1; 
+}
+.mylike1_title h4 span{
+    background: url(../img/arrow_up.png) left center no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: .13rem;
+    height: .13rem;
+}
+.mylike1_title::after{
+    content: " ";
+    border-bottom: 1px solid #c2c2c2;
+    display: block;
+    margin-top: -.09rem;
+}
+
+/* 猜你喜欢2 */
+.maylikebox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.maylikebox li{
+    width: 48%;
+    margin-bottom: .05rem;
+} 
+.maylikebox li:nth-child(odd){
+    padding: 0 .05rem;
+}
+.maylikebox li:nth-child(even){
+    padding: 0 .05rem 0 0;
+}
+.maylikebox a{
+    color:#333;
+    font-size: .12rem;
+}
+.maylike_content,.maylike_price{
+    background: #fff;
+}
+.maylike_content img{
+    width: 100%;
+} 
+.maylike_content p{
+    height: 0.4rem;
+    line-height: 0.2rem;
+    overflow: hidden;
+    padding: .05rem 0.08rem 0 .08rem;
+}
+.maylike_price{
+    padding: .08rem 0 .08rem .1rem;
+    color: #F20C59;
+    font-size: .16rem;
+}
+
+
