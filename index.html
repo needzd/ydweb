@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/gg.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body onload="countTime()">
+<body>
     <!-- 搜索 -->
     <div class="search_box">
         <div class="header">
@@ -19,10 +19,10 @@
             </div>
            <div class="usr_bar">
                 <p>
-                    <a class="cart" href="#">
+                    <a class="cart" href="shopcart.html">
                         <img src="img/grass_cart.png" />
                     </a>
-                    <a href="#">登录</a>
+                    <a href="login.html">登录</a>
                 </p>
             </div>
              <div class="search">
@@ -1069,7 +1069,7 @@
     <div class="maylike">
         <ul class="maylikebox">
             <li>
-                <a href="#">
+                <a href="details.html">
                     <div class="maylike_content">
                         <img src="img/like1.jpg" />
                         <p>                            
@@ -1126,8 +1126,8 @@
     <footer class="common_footer">
         <div class="user_bar">
             <div class="user_bar_list">
-                <a href="#">登录</a>|
-                <a href="#">注册</a>|
+                <a href="login.html">登录</a>|
+                <a href="reg.html">注册</a>|
                 <a href="#">更多</a>|
                 <a href="#">反馈</a>
             </div>
@@ -1166,25 +1166,25 @@
     <div class="bottom_nav">
         <ul class="bottom_nav_box">
             <li class="box1"> 
-                <a href="#">
+                <a href="index.html">
                     <img src="img/shouye.png" >
                     <p>首页</p>
                 </a>
             </li>
             <li class="box1">
-                <a href="#">
+                <a href="classify.html">
                     <img src="img/fenglie.png" >
                     <p>分类</p>
                 </a>
             </li>
             <li class="box1">
-                <a href="#">
+                <a href="shopcart.html">
                     <img src="img/gouwuche.png" >
                     <p>购物车</p>
                 </a>
             </li>
             <li class="box1">
-                <a href="#">
+                <a href="my.html">
                     <img src="img/wode.png" >
                     <p>我的</p>
                 </a>
@@ -1201,8 +1201,10 @@
 </html>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/gotop.js"></script>
 
-<script>
+<!-- <script>
     var swiper = new Swiper('.swiper1', {
         loop:true,
         autoplay:{
@@ -1235,80 +1237,9 @@
             el: '.swp3',
             },
         });
-</script>
+</script> -->
 <script>
     document.getElementById('bannerbox').style.height=document.body.offsetWidth/34 + 'rem';
 </script>
-<!-- 回到顶部 -->
-<script>
-    $(".content").scroll(function(){
-        var scroll = $(".content").scrollTop();
-        if(scroll>=50){
-            $(".gotop_box").css({"display":"block","z-index":"1"});
-        }else{
-            $(".gotop_box").css("display","none");            
-        }
-    })
 
-    $(function(){
-            $(".gotop_box").click(function(){
-                $(".content").animate({scrollTop:0}, 500);
-            })
-        })
-</script>
-<!-- 文字轮播 -->
-<script>
-    $(function(){
-        var num=0;
-        setInterval(function(){
-            num++;
-            if(num==4){
-                $('.head_con_list').css({'top':'0px'});             
-                num=1;
-            }
-            $('.head_con_list').stop().animate({'top':-38*num+'px'},500)
-        },1000)
-    })
-</script>
-<!-- 倒计时 -->
-<script>
-    function countTime() {  
-        //获取当前时间  
-        var date = new Date();  
-        var now = date.getTime(); 
-
-        //设置截止时间  
-        var str="2019/4/10 00:00:00";
-        var endDate = new Date(str); 
-        var end = endDate.getTime();  
-        
-        //时间差  
-        var leftTime = end-now;
-
-        //定义变量h,m,s保存倒计时的时间  
-        var h,m,s;  
-        if (leftTime>=0) {  
-            h = Math.floor(leftTime/1000/60/60);  
-            m = Math.floor(leftTime/1000/60%60);  
-            s = Math.floor(leftTime/1000%60);                     
-        }
-
-         //将0-9的数字前面加上0，例1变为01
-        h = checkTime(h);
-        m = checkTime(m);
-        s = checkTime(s);
-        function checkTime(i){
-            if (i<10) {
-                i = "0"+i;
-            }
-            return i;
-        }
-        //将倒计时赋值到div中    
-        document.getElementsByClassName("timerbox")[0].innerHTML = h;  
-        document.getElementsByClassName("timerbox")[1].innerHTML = m;  
-        document.getElementsByClassName("timerbox")[2].innerHTML = s;  
-        //递归每秒调用countTime方法，显示动态时间效果  
-        setTimeout(countTime,1000);  
-    }
-</script>
 

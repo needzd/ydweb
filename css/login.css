@@ -82,6 +82,7 @@ body{
     position: absolute;
     top: 35%;
     right: 0;
+    display: none;
 }
 .del{
     right: .6rem;
@@ -112,7 +113,6 @@ body{
     margin-top: .25rem;
     display: flex;
     justify-content: space-between;
-    color:#78BEE9;
     font-size: .3rem;
 }
 .qk_login a{

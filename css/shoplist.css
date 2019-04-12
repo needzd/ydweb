@@ -2,9 +2,8 @@ html{
     font-size: 100px!important;
 }
 body{
-    background: #fff;
+    background: #f3f5f7;
 }
-
 /* 搜索 */
 .header{
     background: #fff;
@@ -35,7 +34,6 @@ body{
     display: block;
     border: none;
     border-radius: 1.1rem;
-    outline: 0;
 }
 .input_box img{
     width: 0.16rem;
@@ -51,7 +49,7 @@ body{
     margin-right: .18rem;
     margin-top: .14rem; 
 }
-/* .nav_list{
+.nav_list{
     position: fixed;
     width: 1.8rem;
     top: .55rem;
@@ -77,7 +75,7 @@ body{
 }
 .nav_list li{
     position: relative;
-    width: 1.7rem;
+    width: 1.95rem;
     height: .55rem;
     padding: 0 .05rem;
     line-height: .55rem;
@@ -87,7 +85,7 @@ body{
     position: absolute;
     left:31%;
     content: " ";
-    width: 69%;
+    width: 56%;
     height: 1px;
     bottom: 0;
     background: #ccc;
@@ -126,91 +124,20 @@ body{
 .nav_list li .nav_a4:before{
     background: url(../img/yinc_nav1.png) no-repeat;
     background-size: contain;
-} */
+}
 
 
-/* 主体 */
-.container{
-    width: 100%;
-    -webkit-flex:1;
-    overflow-y: auto;
-    overflow-x: hidden;
+/* 导航栏 */
+/* .tabs_module{
     display: flex;
-}
-.container_left{
-    width: 0.76rem;
-    display: flex;
-    height: 100%;
-    background: #f0f0f0;
-}
-.con_left_list{
-    box-sizing: border-box;
-    flex: 1;
-    overflow-y: auto;
-    height: auto;
-} 
-.con_left_list li{
-    font-size: .14rem;
-    line-height: 0.48rem;
-    text-align: center;
-    box-sizing: border-box;
-    position: relative;
-    top: 0;
-}
-.con_left_list li a{
-    color: #000;
-    padding-bottom: .13rem;
-    border-bottom: 1px solid #ccc;
-}
-.cur{
-    border-left: .03rem solid #F20C59;
+    justify-content: space-around;
+    /* width: 100%; */
+    align-items: center;
     background: #fff;
+    border-bottom: 1px solid #ebeced;
 }
-.con_left_list .cur a{
-    color: #F20C59;
-    border: none;
-}
-
-
-.container_right_box{
-    overflow: auto;
-}
-.container_right{
-    padding: 0.08rem 0 0 0.08rem ;
-    display: flex;
-    flex-direction: column;
-    width: 2.98rem;
-    box-sizing: border-box;
-}
-.right_con_list{
-    flex: 1;
-}
-
-.right_con_list h3{
-    font-size: .07rem;
-    padding-bottom: .1rem;
-    color: #999;
-}
-.listbox{
-    overflow: hidden;
-}
-.con_list li{
-    box-sizing: border-box;
-    float: left;
-    margin-right: .085rem;
-    margin-bottom: .08rem;
-    background: #F8F8F8;
-    text-align: center;
-}
-.con_list li a img{
-    width: 0.78rem;
-    height: 0.78rem;
-    margin: .05rem
-}
-.con_list li a{
+.tabs_module a{
+    font-size: .14rem;
     color: #666;
-}
-.con_list li a p{
-    font-size: 0.11rem;
-    margin-bottom: .05rem;
-}
+    padding: .15rem 0;
+} */

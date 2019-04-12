@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="qk_login">
-                        <p>手机号快速注册</p>
+                        <a href="reg.html">手机号快速注册</a>
                         <a href="#">找回密码</a>
                     </div>
                     <div class="login_btn">
@@ -77,3 +77,15 @@
     </section>
 </body>
 </html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    $(function(){
+        $(".user_code").click(function(){
+            $(this).children("input").focus();
+            $(this).children(".del_btn").show();
+        })
+        $("input").focusout(function(){
+            $(this).next().hide();
+        });
+    })
+</script>

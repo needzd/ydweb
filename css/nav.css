@@ -1,0 +1,76 @@
+.nav_list{
+    position: fixed;
+    width: 1.8rem;
+    top: .55rem;
+    border-radius: .05rem;
+    right: .15rem;
+    z-index: 10;
+    font-size: .16rem;
+    color: #ccc;
+    background: #fff;
+    opacity: .94;
+    box-shadow: 0 -0.005rem 0.06rem #bfbfbf;
+    display: none;
+}
+.nav_list::before{
+    content: " ";
+    position: absolute;
+    top: -.12rem;
+    right: .03rem;
+    width: .3rem;
+    height: 0.12rem;
+    background: url(../img/yinc_nav_jt.png) no-repeat;
+    background-size: contain;
+}
+.nav_list li{
+    position: relative;
+    width: 1.7rem;
+    height: .55rem;
+    padding: 0 .05rem;
+    line-height: .55rem;
+    overflow: hidden;
+}
+.nav_list li:before{
+    position: absolute;
+    left:31%;
+    content: " ";
+    width: 69%;
+    height: 1px;
+    bottom: 0;
+    background: #ccc;
+}
+.nav_list li a{
+    display: block;
+    color: #666;
+    line-height: .55rem;
+    width: 100%;
+    height: 100%;
+    padding-left: .3rem;
+}
+.nav_list li a:before{
+    display: inline-block;
+    content: "";
+    width: .2rem;
+    height: .2rem;
+    margin-right: .1rem;
+    vertical-align: middle;
+}
+.nav_list li .nav_a1:before,.nav_list li .nav_a2:before,.nav_list li .nav_a3:before,.nav_list li .nav_a4:before{
+    content: " ";
+}
+.nav_list li .nav_a1:before{
+    background: url(../img/yinc_nav4.png) no-repeat;
+    background-size: contain;
+}
+.nav_list li .nav_a2:before{
+    background: url(../img/yinc_nav3.png) no-repeat;
+    background-size: contain;
+}
+.nav_list li .nav_a3:before{
+    background: url(../img/yinc_nav2.png) no-repeat;
+    background-size: contain;
+}
+.nav_list li .nav_a4:before{
+    background: url(../img/yinc_nav1.png) no-repeat;
+    background-size: contain;
+}

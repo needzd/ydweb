@@ -35,6 +35,7 @@ body{
 
 
 
+
 /* 商品 */
 .content{
     width: 100%;
@@ -82,16 +83,16 @@ body{
     line-height: 2rem;
     padding-right: 1.3rem;
     border-right: 1px solid #e6e6e6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
 }
 .title_left h4{
     font-weight: 400;
     display: inline;
-    /* display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden; */
 }
-.title_left p {
+.title_left span {
     background: url(../img/ziying_red.png) no-repeat;
     background-size: contain;
     width: 2.2rem;
@@ -508,8 +509,8 @@ body{
 .swiper2 .swiper-pagination {
     top: 30rem;
 }
-.swiper2 .swiper-container {
-    padding-bottom: .4rem;
+.swiper2 .swiper-wrapper{
+    padding-bottom: 1rem;
 }
 .guess_like_banner{
     padding-bottom: 1.3rem;    
